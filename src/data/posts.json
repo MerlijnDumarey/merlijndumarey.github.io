@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mock-post-1",
+    "date": "2026-03-10",
+    "title": "The Balance Between Acceleration and Ethics in AI",
+    "excerpt": "How do we push the boundaries of Artificial Intelligence without compromising our moral responsibilities?",
+    "blocks": [
+      { 
+        "type": "text", 
+        "value": "As an AI student, I often grapple with the dual nature of our field. On one hand, we have the incredible drive to accelerate (AAI). We want to build models that process faster, understand deeper, and solve problems that were previously unsolvable." 
+      },
+      { 
+        "type": "image", 
+        "url": "/images/merlijn-dumarey-profile.jpg", 
+        "caption": "Innovation must be guided by human values." 
+      },
+      { 
+        "type": "text", 
+        "value": "However, acceleration without direction is reckless. This is where Ethical Expertise for Innovation (EEI) comes in. We must build AI with transparency and fairness baked in from the ground up, not just as an afterthought." 
+      },
+      { 
+        "type": "video", 
+        "url": "/blog/videos/demo-placeholder.mp4", 
+        "caption": "A quick demonstration of ethical monitoring." 
+      },
+      { 
+        "type": "text", 
+        "value": "In my upcoming internship, I'll be focusing heavily on MLOps. I see this as the perfect intersection: building robust, automated pipelines that ensure models are not only fast to deploy but also continuously monitored for ethical drift and bias." 
+      }
+    ]
+  }
+]
