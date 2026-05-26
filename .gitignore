@@ -1,0 +1,16 @@
+# Project Specific
+Professional_Networking_Draaiboek_2025-26.pdf
+20260504-curriculum-vitae.docx
+LinkedIn/
+old-school-index.html
+REQUIREMENTS.md
+
+# IDE/OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Gemini CLI
+.gemini/
+.geminiignore
