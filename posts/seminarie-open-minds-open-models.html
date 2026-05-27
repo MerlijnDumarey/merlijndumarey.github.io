@@ -33,29 +33,32 @@
                     <img src="images/seminarie-2/IMG_20251028_191042.jpg" alt="Open Minds, Open Models presentatie" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                 </div>
 
-                <p>Een enorme dank aan <strong>Niels Rogge</strong> voor de inspirerende Tech&Meet sessie <i>"Open Minds, Open Models"</i> aan Howest Brugge. Het was een boeiende avond die diep in het snel veranderende landschap van <strong>open-source AI</strong> dook. Als AI-student zie ik Hugging Face vaak als de "GitHub voor AI-projecten", en deze sessie bevestigde dat beeld alleen maar.</p>
+                <p>Een enorme dank aan <strong>Niels Rogge</strong> voor de inspirerende Tech&Meet sessie <i>"Open Minds, Open Models"</i> aan Howest Brugge. Het was een boeiende avond die diep in het snel veranderende landschap van open-source AI dook. Als AI-student zie ik Hugging Face vaak als de "GitHub voor AI-projecten": dé plek waar grote modelbestanden en datasets gedeeld worden, en deze sessie bevestigde dat beeld alleen maar.</p>
 
-                <p>Niels is een sleutelfiguur in de AI-wereld, met een dubbele rol bij <strong>ML6</strong> en <strong>Hugging Face</strong>. Hij deelde zelfs het leuke 'origin story' achter de naam Hugging Face: het begon ooit als een emoji-gebaseerde chatbot, die later uitgroeide tot een wereldwijd platform dankzij hun vroege implementatie van Google's BERT.</p>
+                <p>Niels, die zowel bij <strong>ML6</strong> als bij het open-source team van <strong>Hugging Face</strong> werkt, deelde zelfs het leuke 'origin story' achter de naam. Wat begon als een emoji-gebaseerde chatbot voor tieners, groeide uit tot een wereldwijd platform toen ze in 2018 een <strong>PyTorch</strong>-versie ontwikkelden van Google's baanbrekende <strong>BERT</strong>-model. Dit bleek het fundament voor de Transformers-bibliotheek die we vandaag allemaal gebruiken.</p>
 
-                <h2>Verschuivingen in het Landschap</h2>
-                <p>Een van de meest opvallende inzichten was de geografische verschuiving in het gebruik van open-source AI. Afgelopen zomer verschoof het zwaartepunt van het downloadverkeer van AI-modellen voor het eerst van de VS naar <strong>China</strong>. Dit toont aan hoe cruciaal open-source is geworden voor wereldwijde technologische soevereiniteit.</p>
+                <h2>Verschuivingen en Licenties</h2>
+                <p>Een van de meest opvallende inzichten was de geografische verschuiving. Afgelopen zomer werd er voor het eerst meer open-source AI-verkeer en model-uploads waargenomen vanuit <strong>China</strong> dan vanuit de VS. Dit onderstreept hoe cruciaal open-source is voor wereldwijde technologische soevereiniteit.</p>
 
-                <p>Niels benadrukte ook het belang van <strong>licenties</strong>. Voor ontwikkelaars is het essentieel om het onderscheid te begrijpen tussen <i>Closed Source</i>, <i>Open Weight</i> en <i>Fully Open Source</i>. Dit bepaalt niet alleen wat je met een model kunt doen, maar ook hoe transparant en veilig het is voor professioneel gebruik.</p>
+                <p>Tijdens de sessie leerden we ook dat niet alle 'open' AI hetzelfde is. Er is een essentieel onderscheid tussen <strong>Closed Source</strong>, <strong>Open Weights</strong> (waarbij je het model kunt draaien maar de trainingsdata niet hebt) en <strong>Fully Open Source</strong>. Dit bepaalt hoe transparant en veilig een model is voor professionele implementaties, of je nu kiest voor een <i>serverless</i> deployment of <i>self-hosted</i> beheer.</p>
 
                 <div class="post-images" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 40px 0;">
                     <img src="images/seminarie-2/IMG_20251028_185633.jpg" alt="Niels Rogge aan het woord" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                     <img src="images/seminarie-2/IMG_20251028_185802.jpg" alt="Technische uitleg over modellen" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                 </div>
 
-                <h2>Van SmolLM tot LeRobot</h2>
-                <p>De sessie zat boordevol concrete voorbeelden van baanbrekende projecten:</p>
+                <h2>Van Fine-Tuning naar Vision Models</h2>
+                <p>Er werd nog een belangrijke technische shift besproken: <strong>Fine-Tuning</strong>. Waar we vroeger standaard de Transformers-library gebruikten om gewichten (weights) te updaten, is er nu <strong>Unsloth</strong>. Dit is nieuwer, sneller en simpelweg beter voor het aanpassen van modellen aan specifieke taken. Daarnaast zagen we de opkomst van <strong>VLMs (Vision Language Models)</strong>, die een stap verder gaan dan de traditionele LLMs door beelden direct te kunnen 'begrijpen'.</p>
+
+                <p>De sessie zat boordevol concrete voorbeelden van baanbrekende projecten die aantonen dat er voor elke AI-enthousiasteling wel iets te vinden is op Hugging Face:</p>
                 <ul>
-                    <li><strong>SmolLM:</strong> Lichtgewicht modellen die aantonen dat krachtige AI ook lokaal op je toestel kan draaien zonder enorme rekenkracht.</li>
-                    <li><strong>Flux:</strong> De indrukwekkende beeldgeneratie-modellen van Black Forest Labs.</li>
-                    <li><strong>LeRobot:</strong> Een open-source alternatief voor robotica-projecten (zoals Tesla's Optimus), wat de drempel voor hardware-innovatie enorm verlaagt.</li>
+                    <li><strong>SmolLM:</strong> Lichtgewicht modellen die aantonen dat krachtige AI ook lokaal (on-device) kan draaien.</li>
+                    <li><strong>Flux:</strong> De indrukwekkende projecten van Black Forest Labs op het gebied van beeldgeneratie.</li>
+                    <li><strong>LeRobot:</strong> Een open-source robotica-alternatief voor bijvoorbeeld Tesla's Optimus, wat hardware-innovatie toegankelijker maakt.</li>
                 </ul>
 
-                <p>Voor wie niet weet waar te beginnen: Niels tipte <strong>huggingface.co/learn</strong> als hét vertrekpunt. Er is werkelijk voor elke AI-liefhebber iets te vinden op het platform.</p>
+                <h2>AI-Agents en Veiligheid</h2>
+                <p>Een ander fascinerend thema was dat van <strong>AI-Agents</strong>. De structuur is in essentie: <i>Input -> LLM ( <-> Tools ) -> Output</i>. Een agent beslist autonoom welke tools (zoals de <strong>Jupyter Agent</strong> voor data science) hij inzet. Niels drukte ons echter op het hart: gebruik voor agents <strong>altijd een sandbox</strong> om ongewenste interacties met je systeem te voorkomen.</p>
 
                 <div class="post-images" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 40px 0;">
                     <img src="images/seminarie-2/IMG_20251028_191228.jpg" alt="Detail van de presentatie" style="width: 100%; border-radius: 8px;">
@@ -63,6 +66,8 @@
                     <img src="images/seminarie-2/IMG_20251028_192226.jpg" alt="Vraag en antwoord sessie" style="width: 100%; border-radius: 8px;">
                     <img src="images/seminarie-2/IMG_20251028_193250.jpg" alt="Publiek bij de Tech&Meet" style="width: 100%; border-radius: 8px;">
                 </div>
+
+                <p>Voor wie niet weet waar te beginnen: Niels tipte <strong>huggingface.co/learn</strong> als hét vertrekpunt. Het was een fascinerende avond die mijn passie voor open-source AI alleen maar heeft vergroot.</p>
 
                 <div style="margin-top: 50px; padding: 20px; border-top: 1px solid var(--border-color); text-align: center;">
                     <p>Bekijk ook mijn originele post en de discussie op LinkedIn:</p>
@@ -73,7 +78,7 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Merlijn Dumarey - Gebouwd met een passie voor data</p>
+        <p>&copy; 2026 Merlijn Dumarey - Portfolio van een AI-professional</p>
     </footer>
 </body>
 </html>
