@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoe deze website tot stand kwam | EEI/AAI door Merlijn Dumarey</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 </head>
 <body>
     <header class="header">
-        <div class="logo-placeholder" title="Ethical Expertise for Innovation / Accelerating with Artificial Intelligence">
-            <strong class="color-secondary">EEI</strong>/<strong class="color-secondary" style="color: #ffffff;">AAI</strong>
+        <div class="header-container">
+            <a href="../index.html" class="logo-link">
+                <div class="logo-placeholder" title="Ethical Expertise for Innovation / Accelerating with Artificial Intelligence">
+                    <strong class="color-secondary">EEI</strong>/<strong class="color-secondary" style="color: #ffffff;">AAI</strong>
+                </div>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="active"><a href="../blog.html">Blog</a></li>
+                    <li><a href="../about.html">Over Mij</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="../index.html">Home</a></li>
-                <li class="active"><a href="../blog.html">Blog</a></li>
-                <li><a href="../about.html">Over Mij</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main class="content">
@@ -32,16 +37,16 @@
                 <p>Voor mijn e-portfolio wilde ik een balans vinden tussen eenvoud, professionaliteit en technische diepgang. In deze post leg ik uit welke keuzes ik heb gemaakt voor de architectuur en hosting van deze website.</p>
 
                 <h2>De Stack: Custom HTML & CSS</h2>
-                <p>In plaats van te kiezen voor een standaard CMS zoals WordPress of Wix, heb ik besloten om de website vanaf nul op te bouwen met <strong>HTML5 en CSS3</strong>. Dit geeft me volledige controle over het design en de performantie, en toont mijn vermogen om met webtechnologieën te werken.</p>
+                <p>In plaats van te kiezen voor een standaard CMS zoals WordPress of Wix, heb ik besloten om de website vanaf nul op te bouwen met <strong>HTML5 en CSS3</strong>. Dit geeft me volledige controle over het design en de performantie. Mijn filosofie hierbij is simpel: maak het niet onnodig moeilijk als een eenvoudige oplossing perfect werkt en precies het gewenste resultaat levert.</p>
 
                 <h2>Hosting & Domeinbeheer</h2>
                 <p>De website wordt gehost via <strong>GitHub Pages</strong>. Dit is een uitstekende oplossing voor statische sites omdat het naadloos integreert met versiebeheer via Git. Voor het domeinbeheer heb ik gekozen voor <strong>Cloudflare</strong>. Cloudflare biedt niet alleen een kosteneffectieve manier om mijn domein (eeiaai.com) te beheren, maar zorgt ook voor extra beveiliging en snelheid via hun Content Delivery Network (CDN).</p>
 
                 <h2>Bouwen met AI: Gemini CLI</h2>
-                <p>Een uniek aspect van het ontwikkelproces is het gebruik van de <strong>Gemini CLI</strong>. Ik heb deze website gebouwd door interactie met een AI-agent in een sandboxed Docker-container op mijn lokale machine. Dit stelde me in staat om snel iteraties uit te voeren, structurele wijzigingen door te voeren en zelfs complexe vertalingen en design-refinement te automatiseren terwijl ik de volledige regie behield.</p>
+                <p>Een uniek aspect van het ontwikkelproces is het gebruik van de <strong>Gemini CLI</strong>. Ik heb deze website gebouwd door interactie met een AI-agent in een sandboxed Docker-container op mijn lokale machine. Dit stelde me in staat om snel iteraties uit te voeren, structurele wijzigingen door te voeren en design-refinement te automatiseren terwijl ik de volledige regie behield. Bovendien stelt deze workflow me in staat om andere nuttige taken uit te voeren terwijl de agent de website opbouwt. Hoewel dit e-portfolio een geweldige manier is om mijn ervaringen te delen, mag het als AI-engineer niet een te groot deel van mijn kostbare tijd en planning in beslag nemen.</p>
 
                 <h2>Onderhoudbaarheid</h2>
-                <p>Om nieuwe blogposts (zoals deze) toe te voegen, gebruik ik een gestandaardiseerd HTML-sjabloon. Dit proces is uiterst efficiënt: ik schrijf de inhoud, pas het sjabloon toe en push de wijzigingen naar GitHub, waarna de site automatisch wordt bijgewerkt. Dit demonstreert een "Agile" aanpak van contentbeheer zonder de overhead van een zwaar backend-systeem.</p>
+                <p>Om nieuwe blogposts (zoals deze) toe te voegen, gebruik ik een gestandaardiseerd HTML-sjabloon. Het werkt verrassend goed om simpelweg een handgeschreven tekst aan een agent zoals de Gemini CLI te bezorgen en te vragen deze in een template te gieten. Dit proces is uiterst efficiënt: de inhoud wordt aangeleverd, de agent past het sjabloon toe en ik push de wijzigingen naar GitHub, waarna de site automatisch wordt bijgewerkt. Dit demonstreert een "Agile" aanpak van contentbeheer zonder de overhead van een zwaar backend-systeem.</p>
             </div>
         </article>
     </main>

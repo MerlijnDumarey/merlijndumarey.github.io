@@ -25,12 +25,17 @@ body {
 .color-secondary { color: var(--color-secondary); }
 
 .header {
+    background-color: var(--header-bg);
+    color: #ffffff;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: var(--header-bg);
-    color: #ffffff;
+    padding: 20px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .logo-placeholder {
@@ -38,6 +43,11 @@ body {
     font-weight: 800;
     letter-spacing: -0.5px;
     text-transform: uppercase;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .nav-menu {
@@ -66,7 +76,7 @@ body {
 
 .content {
     padding: 60px 40px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     flex-grow: 1;
 }
