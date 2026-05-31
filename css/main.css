@@ -277,8 +277,31 @@ h3 {
 }
 
 @media (max-width: 768px) {
-    .header { padding: 20px; flex-direction: column; gap: 20px; }
+    .header-container { 
+        padding: 20px; 
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    .nav-menu {
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .nav-menu a {
+        font-size: 0.95rem;
+        padding: 5px 2px;
+    }
     .content { padding: 40px 20px; }
     .profile-picture { float: none; margin: 0 auto 30px auto; display: block; }
     .pillars { flex-direction: column; }
+
+    /* Limit preview text on mobile */
+    .blog-post-summary p:not(.post-meta), 
+    .pillar p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 0.95rem;
+    }
 }
