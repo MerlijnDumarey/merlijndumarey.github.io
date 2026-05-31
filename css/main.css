@@ -133,6 +133,18 @@ h3 {
     flex-wrap: wrap;
 }
 
+@media (min-width: 769px) {
+    /* Perfect centering for the middle button when 3 buttons are present */
+    .cta-group:has(> .cta-button:nth-child(3):last-child) {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 40px; /* Increased spacing as requested */
+    }
+    .cta-group:has(> .cta-button:nth-child(3):last-child) .cta-button:nth-child(1) { justify-self: end; }
+    .cta-group:has(> .cta-button:nth-child(3):last-child) .cta-button:nth-child(2) { justify-self: center; }
+    .cta-group:has(> .cta-button:nth-child(3):last-child) .cta-button:nth-child(3) { justify-self: start; }
+}
+
 .profile-details {
     margin-top: 6rem;
     border-top: 1px solid var(--border-color);
