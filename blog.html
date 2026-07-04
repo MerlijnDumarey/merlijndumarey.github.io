@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | EEI/AAI door Merlijn Dumarey</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/theme.js"></script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -15,13 +16,24 @@
                     <strong class="color-secondary">EEI</strong>/<strong class="color-secondary" style="color: #ffffff;">AAI</strong>
                 </div>
             </a>
+            <div class="header-actions">
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">Over Mij</a></li>
+                    <li><a href="thesis.html">Thesis</a></li>
                 </ul>
             </nav>
+            <details class="lang-dropdown">
+                <summary class="lang-dropdown-toggle">NL <span class="lang-caret">▾</span></summary>
+                <ul class="lang-dropdown-menu">
+                    <li><span class="lang-option lang-option-active">Nederlands</span></li>
+                    <li><a href="en/blog.html" class="lang-option">English</a></li>
+                </ul>
+            </details>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Wissel tussen licht en donker thema">🌙</button>
+            </div>
         </div>
     </header>
 

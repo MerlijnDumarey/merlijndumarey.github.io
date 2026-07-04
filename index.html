@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merlijn Dumarey | AI & Data Science Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/theme.js"></script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -15,13 +16,24 @@
                     <strong class="color-secondary">EEI</strong>/<strong class="color-secondary" style="color: #ffffff;">AAI</strong>
                 </div>
             </a>
+            <div class="header-actions">
             <nav>
                 <ul class="nav-menu">
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">Over Mij</a></li>
+                    <li><a href="thesis.html">Thesis</a></li>
                 </ul>
             </nav>
+            <details class="lang-dropdown">
+                <summary class="lang-dropdown-toggle">NL <span class="lang-caret">▾</span></summary>
+                <ul class="lang-dropdown-menu">
+                    <li><span class="lang-option lang-option-active">Nederlands</span></li>
+                    <li><a href="en/index.html" class="lang-option">English</a></li>
+                </ul>
+            </details>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Wissel tussen licht en donker thema">🌙</button>
+            </div>
         </div>
     </header>
 
@@ -29,21 +41,21 @@
         <section class="hero-section">
             <h1>AI & Innovatie: Mijn e-Portfolio</h1>
             <p class="intro-text">
-                Ik ben <strong>Merlijn Dumarey</strong>, laatstejaarsstudent <strong>Toegepaste Informatica (AI)</strong> aan Howest Brugge. Deze website is mijn persoonlijke verzamelplaats voor alles wat mij drijft als toekomstig AI-professional. 
+                Ik ben <strong>Merlijn Dumarey</strong>, afgestudeerd in <strong>Toegepaste Informatica (AI)</strong> aan Howest Brugge. Deze website is mijn persoonlijke verzamelplaats voor alles wat mij drijft als AI-professional.
             </p>
             
             <p class="secondary-text">
                 Waar LinkedIn vaak de samenvatting biedt, gebruik ik dit platform voor de <strong>verdieping</strong>. Hier deel ik uitgebreide verslagen van Tech&Meets, mijn eigen AI-projecten en technische inzichten.
             </p>
 
-            <p style="font-size: 1rem; color: #718096; margin-bottom: 2rem; font-style: italic;">
+            <p style="font-size: 1rem; color: var(--text-subtle); margin-bottom: 2rem; font-style: italic;">
                 Wil je op de hoogte blijven van mijn nieuwste updates of heb je een interessant project waar we aan kunnen samenwerken? Connecteer dan zeker met mij via LinkedIn!
             </p>
 
             <div class="cta-group">
                 <a href="about.html" class="cta-button">Wie ben ik?</a>
                 <a href="https://www.linkedin.com/in/merlijn-dumarey" target="_blank" class="cta-button" style="background-color: #0077b5;">Connecteer op LinkedIn</a>
-                <a href="blog.html" class="cta-button" style="background-color: #ffffff; color: var(--color-primary); border: 2px solid var(--color-primary);">Ontdek mijn Blog</a>
+                <a href="blog.html" class="cta-button" style="background-color: var(--card-bg); color: var(--color-primary); border: 2px solid var(--color-primary);">Ontdek mijn Blog</a>
             </div>
 
             <div class="highlighted-posts" style="margin-top: 4rem; text-align: left;">
