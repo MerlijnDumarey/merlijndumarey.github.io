@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor's Thesis: Contrast Enhancement for Satellite Co-registration | Merlijn Dumarey</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/theme.js"></script>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-placeholder" title="Ethical Expertise for Innovation / Accelerating with Artificial Intelligence">
+                    <strong class="color-secondary">EEI</strong>/<strong class="color-secondary" style="color: #ffffff;">AAI</strong>
+                </div>
+            </a>
+            <div class="header-actions">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li class="active"><a href="thesis.html">Thesis</a></li>
+                </ul>
+            </nav>
+            <details class="lang-dropdown">
+                <summary class="lang-dropdown-toggle">EN <span class="lang-caret">▾</span></summary>
+                <ul class="lang-dropdown-menu">
+                    <li><a href="../thesis.html" class="lang-option">Nederlands</a></li>
+                    <li><span class="lang-option lang-option-active">English</span></li>
+                </ul>
+            </details>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle between light and dark theme">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="about-section">
+            <h1>Scenario-Specific Contrast Enhancement for Satellite Co-registration</h1>
+            <p class="intro-text">
+                An evaluation of <strong>MatchAnything</strong> — my bachelor's thesis in Applied Computer Science (AI) at Howest Bruges, June 2026.
+            </p>
+
+            <div class="profile-details">
+                <h2>Summary</h2>
+                <p>
+                    When you want to detect changes between two satellite images of the same location, those images first need to be perfectly aligned — a process called <strong>co-registration</strong>. That's harder than it sounds: the position of the sun, the season, the angle at which a satellite photographs the scene, and the so-called <strong>parallax effect</strong> (which makes tall buildings, for example, appear shifted between two photos of the same spot) all make it difficult to find reliable correspondences between images.
+                </p>
+                <p>
+                    My research tests whether adding a contrast-enhancing preprocessing step — <strong>CLAHE</strong> (Contrast Limited Adaptive Histogram Equalization) — can improve the performance of <strong>MatchAnything</strong>, a state-of-the-art AI model for image matching. Since no dataset exists with satellite images where the exact geometric transformation between captures is known, I built a proxy experiment: starting from the public AID dataset (10,000 satellite images across 30 categories such as desert, beach, forest, and residential areas), I generated my own controlled transformations and noise, so the quality of every match could be measured objectively.
+                </p>
+                <p>
+                    The results showed that for <strong>9 of the 30 categories</strong>, a specific CLAHE setting produced a significant improvement compared to no CLAHE — for 7 of those, in both match quality and success rate. The <strong>Pond</strong> category benefited most clearly: a high clip limit prevented the otherwise featureless water surface from being incorrectly matched with vegetation. For categories with little inherent structure, such as desert and bare land, a low clip limit worked best instead. For most of the remaining (often highly repetitive or uniform) categories, CLAHE brought no benefit and sometimes even a disadvantage.
+                </p>
+                <p>
+                    The conclusion: the hypothesis that an optimal CLAHE setting can be determined per category is <strong>partially confirmed</strong>. Contrast enhancement is not a universal solution but a scenario-specific one: which setting helps depends strongly on the visual characteristics of the landscape.
+                </p>
+
+                <h2>Download</h2>
+                <p style="color: var(--text-subtle); font-style: italic;">Note: the full thesis document itself is written in Dutch.</p>
+                <div class="cta-group">
+                    <a href="../thesis/ThesisMerlijnDumarey.pdf" class="cta-button" target="_blank">Download the thesis (PDF, Dutch)</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Merlijn Dumarey - Portfolio of an AI professional</p>
+    </footer>
+</body>
+</html>

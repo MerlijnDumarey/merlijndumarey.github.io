@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelorproef: Contrastverbetering voor Satellietcoregistratie | Merlijn Dumarey</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/theme.js"></script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-placeholder" title="Ethical Expertise for Innovation / Accelerating with Artificial Intelligence">
+                    <strong class="color-secondary">EEI</strong>/<strong class="color-secondary" style="color: #ffffff;">AAI</strong>
+                </div>
+            </a>
+            <div class="header-actions">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">Over Mij</a></li>
+                    <li class="active"><a href="thesis.html">Thesis</a></li>
+                </ul>
+            </nav>
+            <details class="lang-dropdown">
+                <summary class="lang-dropdown-toggle">NL <span class="lang-caret">▾</span></summary>
+                <ul class="lang-dropdown-menu">
+                    <li><span class="lang-option lang-option-active">Nederlands</span></li>
+                    <li><a href="en/thesis.html" class="lang-option">English</a></li>
+                </ul>
+            </details>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Wissel tussen licht en donker thema">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="about-section">
+            <h1>Scenariospecifieke Contrastverbetering voor Satellietcoregistratie</h1>
+            <p class="intro-text">
+                Een evaluatie van <strong>MatchAnything</strong> — mijn bachelorproef Toegepaste Informatica (AI) aan Howest Brugge, juni 2026.
+            </p>
+
+            <div class="profile-details">
+                <h2>Samenvatting</h2>
+                <p>
+                    Wanneer je veranderingen tussen twee satellietbeelden van dezelfde locatie wil detecteren, moeten die beelden eerst perfect op elkaar worden uitgelijnd — een proces dat <strong>coregistratie</strong> heet. Dat is lastiger dan het klinkt: de stand van de zon, het seizoen, de hoek waaronder een satelliet fotografeert en het zogenaamde <strong>parallaxfenomeen</strong> (waardoor bijvoorbeeld hoge gebouwen op twee foto's van dezelfde plek toch verschoven lijken) maken het moeilijk om betrouwbare overeenkomsten tussen beelden te vinden.
+                </p>
+                <p>
+                    Mijn onderzoek test of het toevoegen van een contrastverhogende voorbewerkingsstap — <strong>CLAHE</strong> (Contrast Limited Adaptive Histogram Equalization) — de prestaties kan verbeteren van <strong>MatchAnything</strong>, een state-of-the-art AI-model voor het matchen van afbeeldingen. Omdat er geen dataset bestaat met satellietbeelden waarvan de exacte geometrische transformatie tussen opnames gekend is, bouwde ik een proxy-experiment: op basis van de publieke AID-dataset (10.000 satellietbeelden, 30 categorieën zoals woestijn, strand, bos en woonwijk) genereerde ik zelf gecontroleerde transformaties en ruis, zodat de kwaliteit van elke match objectief gemeten kon worden.
+                </p>
+                <p>
+                    Uit de resultaten bleek dat voor <strong>9 van de 30 categorieën</strong> een specifieke CLAHE-instelling een significante verbetering opleverde ten opzichte van geen CLAHE — voor 7 daarvan zowel in matchkwaliteit als in slagingspercentage. De categorie <strong>Pond</strong> (vijvers) profiteerde het duidelijkst: een hoge cliplimiet zorgde ervoor dat het structuurloze wateroppervlak niet langer verkeerd gematcht werd met vegetatie. Voor categorieën met weinig eigen structuur, zoals woestijn en kaal terrein, werkte net een lage cliplimiet het best. Voor de meeste overige (vaak sterk repetitieve of egale) categorieën bracht CLAHE geen voordeel en soms zelfs een nadeel.
+                </p>
+                <p>
+                    De conclusie: de hypothese dat een optimale CLAHE-instelling per categorie bepaald kan worden, is <strong>gedeeltelijk bevestigd</strong>. Contrastverbetering is geen universele oplossing, maar een scenariospecifieke: welke instelling helpt, hangt sterk af van de visuele eigenschappen van het landschap.
+                </p>
+
+                <h2>Download</h2>
+                <div class="cta-group">
+                    <a href="thesis/ThesisMerlijnDumarey.pdf" class="cta-button" target="_blank">Download de bachelorproef (PDF)</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Merlijn Dumarey - Portfolio van een AI-professional</p>
+    </footer>
+</body>
+</html>
