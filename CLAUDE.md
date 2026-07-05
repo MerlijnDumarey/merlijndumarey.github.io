@@ -65,6 +65,23 @@ or edited page:
 - Before considering a visual change done, mentally (or actually) check
   it against both themes, not just light mode.
 
+## Git workflow: dev first, never commit straight to main
+
+This repo uses `dev` as the working branch and `main` as the
+published/deployed branch (GitHub Pages serves from `main`). Changes
+land on `main` via a pull request from `dev`, not a direct commit.
+
+- Before doing any commit, run `git branch -vv` (or `git fetch` +
+  `git status`) to check which branch you're on and whether `dev` and
+  `main` have diverged — don't assume `main` is the right place to
+  work just because it's checked out.
+- If you're on `main` and about to commit, stop and switch to (or
+  create) `dev` first, commit there, and open a PR into `main` instead
+  of pushing to `main` directly.
+- If you ever find `dev` behind `main` (e.g. because a change slipped
+  onto `main` directly), bring `dev` back in sync (fast-forward it to
+  `main`) before starting new work on it.
+
 ## Other conventions worth knowing
 
 - The header (logo, `.nav-menu` with Home/Blog/Over Mij/Thesis, the
